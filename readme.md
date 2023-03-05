@@ -6,7 +6,7 @@ The page is created in **Polish language**.
 
 ## 📫 Page contains
 
-- main site and two site pages (services and about us),
+- main site and three site pages (services, about us and contact),
 - custom page 404 and redirects,
 - responsible design,
 - accessibility practices,
@@ -15,9 +15,8 @@ The page is created in **Polish language**.
 
 ## 🛠 Used tools / programming languages / technologies
 
-- HTML / CSS,
-- page written in SCSS,
-- JavaScript (just a little bit, not a 'heavy JS project' - in contrast to my other project named ToolsKit),
+- HTML / CSS (SCSS),
+- JavaScript,
 - GULP (code minification, compressing images, support for older browsers),
 - git / github.
 

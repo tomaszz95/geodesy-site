@@ -13,10 +13,10 @@ const browserSync = require('browser-sync').create();
 const reload = browserSync.reload;
 
 const paths = {
-    html: './html/**/*.kit',
-    sass: './src/sass/**/*.scss',
+    html: './src/html/**/*.kit',
+    sass: './src/scss/**/*.scss',
     js: './src/js/**/*.js',
-    img: './src/img/*',
+    img: './src/assets/img/*',
     dist: './dist',
     sassDest: './dist/css',
     jsDest: './dist/js',
