@@ -1,0 +1,40 @@
+@keyframes letters {
+	0% {
+		opacity: 0;
+		transform: translate(-50%, 350%);
+	}
+	80% {
+		opacity: 1;
+		transform: translate(-50%, -55%);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(-50%, -50%);
+	}
+}
+
+@keyframes arrow {
+	0% {
+		transform: translateY(15%);
+	}
+
+	50% {
+		transform: translateY(0%);
+	}
+
+	100% {
+		transform: translateY(15%);
+	}
+}
+
+@keyframes arrowborder {
+	from {
+		transform: scale(0.5);
+		opacity: 0;
+	}
+
+	to {
+		transform: scale(1.5);
+		opacity: 1;
+	}
+}

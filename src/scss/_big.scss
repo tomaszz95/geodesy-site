@@ -1,4 +1,4 @@
-@media (min-width: 45rem) {
+@media (min-width: 68rem) {
 	.nav-mobile {
 		display: none;
 	}
@@ -9,6 +9,9 @@
 
 	.header {
 		height: calc(100vh - 125px);
+		&__img {
+			background-image: url('/dist/assets/img/hero_big.jpg');
+		}
 		&__text {
 			font-size: 3.5rem;
 			&--more {

@@ -6,6 +6,12 @@ const navigationHandler = e => {
 		burgerBtn.classList.toggle('active')
 		navigation.classList.toggle('active')
 	}
+
+	if (burgerBtn.classList.contains('active')) {
+		document.body.style.overflowY = 'hidden'
+	} else {
+		document.body.style.overflowY = 'auto'
+	}
 }
 
 const closeNavigation = e => {
