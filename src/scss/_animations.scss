@@ -38,3 +38,27 @@
 		opacity: 1;
 	}
 }
+
+@keyframes newsLeft {
+	from {
+		opacity: 0;
+		transform: translateX(-200%);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+@keyframes newsRight {
+	from {
+		opacity: 0;
+		transform: translateX(200%);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}

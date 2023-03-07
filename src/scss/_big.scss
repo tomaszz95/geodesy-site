@@ -1,4 +1,12 @@
 @media (min-width: 68rem) {
+	.section-padding {
+		padding: 6em 2em;
+	}
+
+	.section-title {
+		font-size: 2.8rem;
+	}
+
 	.nav-mobile {
 		display: none;
 	}
@@ -21,6 +29,73 @@
 
 		&__arrow {
 			font-size: 5rem;
+		}
+	}
+
+	.info {
+		&__text {
+			position: relative;
+			flex-direction: row;
+			justify-content: space-around;
+			p {
+				font-size: $font-size-l;
+				text-align: right;
+			}
+
+			&--right p {
+				text-align: left;
+			}
+		}
+
+		&__img {
+			display: block;
+			width: 45%;
+			border-radius: 8px;
+			transition: transform 0.3s;
+			margin-left: 3em;
+			&--right {
+				margin-left: 0;
+				margin-right: 3em;
+				order: -10;
+			}
+			&:hover {
+				transform: scale(1.06);
+			}
+		}
+
+		.section-title--second {
+			margin-top: 5em;
+		}
+
+		&__btn {
+			position: absolute;
+			padding: 0.7em 4em;
+			width: 75%;
+			font-size: 1.7rem;
+			bottom: -40%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	.news {
+		margin-top: 6em;
+
+		&__boxes {
+			padding: 1.5em;
+		}
+
+		&__box {
+			max-width: 800px;
+			padding: 3rem;
+		}
+
+		&__properties p {
+			font-size: $font-size-l;
+		}
+
+		&__title {
+			margin-bottom: 3rem;
 		}
 	}
 }
