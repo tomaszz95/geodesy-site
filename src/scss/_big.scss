@@ -1,10 +1,10 @@
 @media (min-width: 68rem) {
 	.section-padding {
-		padding: 6em 2em;
+		padding: 5em 2em;
 	}
 
 	.section-title {
-		font-size: 2.8rem;
+		font-size: 2.9rem;
 	}
 
 	.nav-mobile {
@@ -21,7 +21,7 @@
 			background-image: url('/dist/assets/img/hero_big.jpg');
 		}
 		&__text {
-			font-size: 3.5rem;
+			font-size: 3.4rem;
 			&--more {
 				display: inline;
 			}
@@ -38,7 +38,7 @@
 			flex-direction: row;
 			justify-content: space-around;
 			p {
-				font-size: $font-size-l;
+				font-size: 1.7rem;
 				text-align: right;
 			}
 
@@ -71,7 +71,7 @@
 			position: absolute;
 			padding: 0.7em 4em;
 			width: 75%;
-			font-size: 1.7rem;
+			font-size: $font-size-m;
 			bottom: -40%;
 			left: 50%;
 			transform: translate(-50%, -50%);
@@ -91,11 +91,20 @@
 		}
 
 		&__properties p {
-			font-size: $font-size-l;
+			font-size: $font-size-m;
 		}
 
 		&__title {
 			margin-bottom: 3rem;
+		}
+		&__content {
+			font-size: $font-size-s;
+		}
+	}
+
+	.more-info {
+		&__box {
+			width: 400px;
 		}
 	}
 }
