@@ -1,6 +1,7 @@
 const burgerBtn = document.querySelector('.nav-mobile__burger')
 const navigation = document.querySelector('.nav-mobile__links')
 const newsBoxes = document.querySelectorAll('.news__box')
+let footerYear = document.querySelector('.footer__year')
 let boxesNumber = 0
 
 // NAVIGATION
@@ -49,6 +50,13 @@ const newsBoxesAnimation = () => {
 	})
 }
 
+// FOOTER YEAR
+const handleCurrentYear = () => {
+	const year = new Date().getFullYear()
+	footerYear.innerText = year
+}
+
+handleCurrentYear()
 window.addEventListener('scroll', newsBoxesAnimation)
 burgerBtn.addEventListener('click', navigationHandler)
 navigation.addEventListener('click', closeNavigation)

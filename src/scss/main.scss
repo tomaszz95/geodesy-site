@@ -515,5 +515,37 @@ body {
 	}
 }
 
+// FOOTER
+.footer {
+	background-color: $secondary-color;
+	color: $primary-color;
+	padding: 2rem;
+	margin-bottom: 0;
+	z-index: 5;
+
+	&__boxes {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	&__box {
+		width: 100%;
+		padding: 1rem 2rem;
+		text-align: center;
+		.firm-item {
+			margin: 0.2rem 0;
+		}
+	}
+
+	&__text {
+		text-align: center;
+		margin-top: 1.5rem;
+	}
+}
+
+@import './services';
 @import './medium';
 @import './big';

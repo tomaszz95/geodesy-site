@@ -107,4 +107,45 @@
 			width: 400px;
 		}
 	}
+
+	.footer {
+		padding: 3rem;
+		&__boxes {
+			flex-direction: row;
+		}
+
+		&__box p,
+		&__text {
+			font-size: $font-size-s;
+		}
+	}
+
+	.services {
+		&__header {
+			height: 60vh;
+			&-img {
+				background-image: url('/dist/assets/img/services_big.jpg');
+				background-position: 0% 40%;
+			}
+
+			&-text {
+				top: 42%;
+				font-size: $font-size-xl;
+			}
+		}
+
+		&__box {
+			i {
+				font-size: 3.5rem;
+			}
+
+			h3 {
+				font-size: 1.9rem;
+			}
+
+			& p {
+				font-size: 1.5rem;
+			}
+		}
+	}
 }
