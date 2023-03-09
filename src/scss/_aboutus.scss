@@ -1,0 +1,363 @@
+.aboutus__header {
+	height: 65vh;
+	overflow: hidden;
+	&-img {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background-image: url('/dist/assets/img/aboutus_hero_small.jpg');
+		background-size: cover;
+		background-position: top;
+		background-attachment: fixed;
+	}
+
+	&-shadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(2, 10, 119, 0.521);
+		z-index: 4;
+	}
+
+	&-text {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0%;
+		top: 35%;
+		z-index: 15;
+		color: $pure-white;
+		font-size: $font-size-l;
+		text-align: center;
+		font-weight: 600;
+		font-style: italic;
+	}
+}
+
+.aboutus__firm {
+	padding-bottom: 3em;
+	&-box {
+		margin-top: 2em;
+		padding: 1em;
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		align-items: center;
+		&--text {
+			h3 {
+				font-size: 1.9rem;
+				color: $complementary-color;
+				margin-bottom: 1em;
+			}
+			p {
+				font-size: $font-size-s;
+			}
+		}
+		&--img {
+			display: none;
+		}
+	}
+}
+
+.aboutus__details {
+	background-image: $light-blue-gradient;
+
+	h2 {
+		color: $pure-white;
+	}
+
+	.underline {
+		background-color: $complementary-color;
+	}
+
+	&-boxes {
+		margin-top: 1.5em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	&-container {
+		width: 95%;
+	}
+
+	&-gallery {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-wrap: wrap;
+		padding: 1.5em;
+		max-width: 1200px;
+		margin: 1.2em 0;
+		border-radius: 8px;
+		background: linear-gradient(60deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5));
+		list-style-type: none;
+
+		&-img {
+			margin: 1.5em 2em;
+			height: 210px;
+			width: 170px;
+			transform: scale(1);
+			transition: transform 0.3s;
+			cursor: pointer;
+			border-radius: 8px;
+			box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.4);
+			object-fit: cover;
+			overflow: hidden;
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+
+	&-popup {
+		position: fixed;
+		height: 100vh;
+		width: 100vw;
+		left: 0;
+		top: 0;
+		display: flex;
+		align-content: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		background: rgba(0, 0, 0, 0.4);
+		backdrop-filter: blur(8px);
+		animation: fadeIn 0.3s;
+		z-index: 9999;
+
+		&.hidden {
+			display: none;
+		}
+
+		&--img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			max-height: 75%;
+			max-width: 75%;
+		}
+
+		&--close,
+		&--arrow {
+			position: absolute;
+			bottom: 5%;
+			font-size: 2.8rem;
+			height: 4.2rem;
+			width: 4.2rem;
+			line-height: 3.5rem;
+			opacity: 0.75;
+			border-radius: 50%;
+			cursor: pointer;
+			border: none;
+			transition: opacity 0.3s;
+			&-prev {
+				left: 8%;
+			}
+
+			&-next {
+				right: 8%;
+			}
+		}
+
+		&--close {
+			top: 5%;
+			right: 8%;
+		}
+
+		&--close:hover,
+		&--arrow:hover {
+			opacity: 1;
+		}
+	}
+}
+
+// .aboutus__details-rel {
+// 	position: relative;
+// 	margin: 1.3rem 0;
+// 	width: 100%;
+// 	border-radius: 8px;
+// 	height: 400px;
+// 	overflow: hidden;
+// 	&-slider {
+// 		display: flex;
+// 		transform: translateX(0);
+// 		transition: transform 0.7s;
+// 	}
+
+// 	&-box {
+// 		position: relative;
+// 		width: 100%;
+// 		height: 100%;
+// 		z-index: 0;
+// 		&.active {
+// 			display: block;
+// 		}
+// 	}
+
+// 	&-text {
+// 		position: absolute;
+// 		bottom: 10%;
+// 		left: 50%;
+// 		transform: translateX(-50%);
+// 		text-align: center;
+// 		color: $pure-white;
+// 		font-size: 1.6rem;
+// 		width: 80%;
+// 	}
+
+// 	&-shadow {
+// 		position: absolute;
+// 		bottom: 0;
+// 		left: 0;
+// 		right: 0;
+// 		height: 30%;
+// 		background-color: rgba(0, 0, 0, 0.7);
+// 	}
+
+// 	&-img {
+// 		height: 400px;
+// 		margin: 0;
+// 		object-fit: cover;
+// 		width: 1200px;
+// 	}
+
+// 	&-btn {
+// 		position: absolute;
+// 		top: 50%;
+// 		transform: translateY(-50%);
+// 		padding: 0.5rem 1rem;
+// 		color: $pure-white;
+// 		background-color: rgba(0, 0, 0, 0.5);
+// 		font-size: 1.6rem;
+// 		transition: transform 0.3s;
+// 		border: none;
+// 		cursor: pointer;
+// 		&--prev {
+// 			left: 0;
+// 		}
+
+// 		&--next {
+// 			right: 0;
+// 		}
+
+// 		&:hover {
+// 			transform: translateY(-50%) scale(1.2);
+// 		}
+// 	}
+// }
+
+// .aboutus__team {
+// 	h2 {
+// 		margin-top: 1.3rem;
+// 	}
+
+// 	&.section-padding {
+// 		padding: 1.9rem 0.9rem;
+// 	}
+
+// 	&-box {
+// 		display: flex;
+// 		align-items: center;
+// 		justify-content: space-between;
+// 		flex-direction: column;
+// 	}
+
+// 	&-content {
+// 		width: 100%;
+// 	}
+
+// 	&-allpeople {
+// 		margin-top: 2.5rem;
+// 		display: flex;
+// 		justify-content: center;
+// 		align-items: center;
+// 		flex-direction: column;
+// 		color: $pure-white;
+// 	}
+
+// 	&-person {
+// 		width: 100%;
+// 		margin: 0.6rem;
+// 	}
+
+// 	&-button {
+// 		display: flex;
+// 		align-items: center;
+// 		justify-content: space-between;
+// 		flex-direction: column;
+// 		width: 100%;
+// 		padding: 1.3rem 0.6rem;
+// 		border-top-left-radius: 8px;
+// 		border-top-right-radius: 8px;
+// 		cursor: pointer;
+// 		border: none;
+// 		color: $pure-white;
+// 		font-size: 1.6rem;
+// 		font-weight: bold;
+// 		transition: background-color 0.5s;
+// 		&.one {
+// 			background-image: $light-blue-gradient;
+// 		}
+// 		&.two {
+// 			background-image: $purple-gradient;
+// 		}
+// 		&.three {
+// 			background-image: $blue-gradient;
+// 		}
+// 		&:hover,
+// 		&:active {
+// 			background-color: #8b4a78;
+// 		}
+
+// 		.name {
+// 			margin-bottom: 0.6rem;
+// 			i {
+// 				margin-right: 0.2rem;
+// 			}
+// 		}
+// 	}
+
+// 	&-text {
+// 		display: flex;
+// 		align-items: center;
+// 		justify-content: space-between;
+// 		flex-direction: column;
+// 		color: $pure-white;
+// 		margin-bottom: 1.9rem;
+// 		font-size: 1.6rem;
+// 		background-color: rgb(79, 109, 241);
+// 		border-bottom-left-radius: 8px;
+// 		border-bottom-right-radius: 8px;
+// 		overflow: hidden;
+// 		max-height: 0;
+// 		transition: max-height 0.5s, padding 0.5s;
+// 		text-align: center;
+// 		.fa-phone,
+// 		.fa-house,
+// 		.fa-envelope {
+// 			margin: 0.6rem;
+// 		}
+// 		a {
+// 			text-decoration: none;
+// 			color: $pure-white;
+// 			transition: color 0.3s;
+// 			&:hover {
+// 				color: #ddd;
+// 			}
+// 		}
+// 	}
+
+// 	&-openh {
+// 		margin: 1.3rem 0;
+// 		&-list {
+// 			list-style: none;
+// 			&-item {
+// 				font-size: 1.6rem;
+// 				margin-top: 0.2rem;
+// 				text-align: center;
+// 			}
+// 		}
+// 	}
+// }

@@ -21,5 +21,26 @@
 		}
 	}
 
-	
+	.aboutus__details {
+		&-boxes {
+			margin-top: 2em;
+		}
+
+		&-gallery {
+			&-img {
+				margin: 2em;
+				height: 220px;
+				width: 175px;
+			}
+		}
+
+		&-popup {
+			&--close,
+			&--arrow {
+				font-size: 4rem;
+				height: 5.5rem;
+				width: 5.5rem;
+			}
+		}
+	}
 }

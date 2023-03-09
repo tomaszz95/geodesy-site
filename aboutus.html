@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Informacje o firmie | ASGeodezja</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tomasz Żuber">
+    <meta name="keywords"
+        content="ASGeodezja, geodezja, geodeta, usługi geodezyjne, godziny otwarcia, spis pracowników, historia firmy">
+    <meta name="description"
+        content="Informację odnośnie firmy ASGeodezja. Jej historia, referencje oraz realizacje, a także lista pracowników i godziny otwarcia.">
+    <link rel="shortcut icon" href="./dist/assets/icons/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8fa14ea516.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./dist/css/main.min.css">
+</head>
+
+<body>
+    <nav class="nav-mobile">
+    <div class="nav-mobile__container">
+        <img class="nav-mobile__logo" src="./dist/assets/img/logo.png" alt="Logo firmy ASGeodezja" />
+        <button class="nav-mobile__burger" aria-label="Otwieranie nawigacji mobilnej">
+            <div class="nav-mobile__burger--bar"></div>
+            <div class="nav-mobile__burger--bar"></div>
+            <div class="nav-mobile__burger--bar"></div>
+        </button>
+    </div>
+    <div class="nav-mobile__links">
+        <a class="nav-mobile__link" href="index.html">Strona główna</a>
+        <a class="nav-mobile__link" href="services.html">Usługi</a>
+        <a class="nav-mobile__link" href="aboutus.html">O nas</a>
+        <a class="nav-mobile__link" href="contact.html">Kontakt</a>
+    </div>
+</nav>
+
+<div class="nav-desktop wrapper">
+    <img class="nav-desktop__logo" src="./dist/assets/img/logo.png" alt="Logo firmy ASGeodezja" />
+    <div class="nav-desktop__links">
+        <a class="nav-desktop__link" href="index.html">Strona główna</a>
+        <a class="nav-desktop__link" href="services.html">Usługi</a>
+        <a class="nav-desktop__link" href="aboutus.html">O nas</a>
+        <a class="nav-desktop__link" href="contact.html">Kontakt</a>
+    </div>
+</div>
+
+    <header class="aboutus__header">
+        <div class="aboutus__header-img">
+            <div class="aboutus__header-shadow"></div>
+            <h1 class="aboutus__header-text">ASGeodezja - informacje o firmie, pracownikach, realizacjach</h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- INFO -->
+        <section class="aboutus__firm section-padding">
+            <div class="wrapper">
+                <h2 class="section-title">Historia i rozwój</h2>
+                <div class="underline"></div>
+                <div class="aboutus__firm-box">
+                    <div class="aboutus__firm-box--text">
+                        <h3>ASGeodezja spółka z o.o.</h3>
+                        <p>
+                            W roku 2020 została powołana przez Tomasza Żuber do życia firma o nazwie ASGeodezja. Łącznie
+                            skład zespołu wynosi 5 osób, w
+                            tym geodeci uprawnieni, doświadczeni inżynierowie i technicy geodeci. Połączenie posiadanego
+                            najnowszego
+                            sprzętu w dziedzinie geodezji wraz z ogromnym doświadczeniem kadry gwarantuje szybkie,
+                            staranne
+                            i na najwyższym poziomie wykonanie zleconych usług.
+                            Siedziba firmy znajduje się w Pińczowie przy ul. Spokojnej 23- w niedalekim sąsiedztwie
+                            Powiatowej Komendy Policji, Lidla oraz Netto.
+                        </p>
+                    </div>
+                    <img src="/dist/assets/img/aboutusphoto.jpg"
+                        alt="Trzech inżynierów w żółtych odblaskowych koszulkach trzymających plany budowy na tle toczącej się ogromnej inwestycji budowlanej"
+                        class="aboutus__firm-box--img">
+                </div>
+            </div>
+        </section>
+
+        <section class="aboutus__details section-padding">
+            <div class="wrapper">
+                <h2 class="section-title">Referencje i realizacje</h2>
+                <div class="underline"></div>
+
+                <div class="aboutus__details-boxes">
+                    <div class="aboutus__details-container">
+                        <div class="aboutus__details-gallery">
+                            <img tabindex='0' src="/dist/assets/img/ref1.jpg" alt="Referencja z firmy abcd"
+                                class="aboutus__details-gallery-img">
+                            <img tabindex='0' src="/dist/assets/img/ref2.jpg" alt="Referencja z firmy cdef"
+                                class="aboutus__details-gallery-img">
+                            <img tabindex='0' src="/dist/assets/img/ref3.jpg" alt="Referencja z firmy ghij"
+                                class="aboutus__details-gallery-img">
+                        </div>
+                        <div class="aboutus__details-popup hidden">
+                            <button aria-label="Zamknij popup" class="aboutus__details-popup--close"><i
+                                    class="fa-solid fa-x"></i></button>
+                            <img src="" alt="" class="aboutus__details-popup--img">
+                            <button aria-label="Poprzednie zdjęcie"
+                                class="aboutus__details-popup--arrow aboutus__details-popup--arrow-prev"><i
+                                    class="fa-solid fa-chevron-left"></i></button>
+                            <button aria-label="Następne zdjęcie"
+                                class="aboutus__details-popup--arrow aboutus__details-popup--arrow-next"><i
+                                    class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- <div class="aboutus__details-rel">
+                        <div class="aboutus__details-rel-slider">
+                            <div class="aboutus__details-rel-box active" data-number="1">
+                                <img src="/dist/assets/img/slider1.jpg" alt="Lorem ipsum dolor, sit amet"
+                                    class="aboutus__details-rel-img">
+                                <div class="aboutus__details-rel-shadow"></div>
+                                <p class="aboutus__details-rel-text">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                    elit.</p>
+                            </div>
+                            <div class="aboutus__details-rel-box" data-number="2">
+                                <img src="/dist/assets/img/slider2.jpg" alt="Lorem ipsum dolor, sit amet"
+                                    class="aboutus__details-rel-img">
+                                <div class="aboutus__details-rel-shadow"></div>
+                                <p class="aboutus__details-rel-text">Lorem ipsum dolor sit amet consectetur.</p>
+                            </div>
+                            <div class="aboutus__details-rel-box" data-number="3">
+                                <img src="/dist/assets/img/slider3.jpg" alt="Lorem ipsum dolor, sit amet"
+                                    class="aboutus__details-rel-img">
+                                <div class="aboutus__details-rel-shadow"></div>
+                                <p class="aboutus__details-rel-text">Lorem ipsum dolor sit amet consectetur adipisicing.
+                                </p>
+                            </div>
+                            <div class="aboutus__details-rel-box" data-number="4">
+                                <img src="/dist/assets/img/slider4.jpg" alt="Lorem ipsum dolor, sit amet"
+                                    class="aboutus__details-rel-img">
+                                <div class="aboutus__details-rel-shadow"></div>
+                                <p class="aboutus__details-rel-text">Lorem ipsum dolor sit amet consectetur.</p>
+                            </div>
+                        </div>
+                        <button class="aboutus__details-rel-btn aboutus__details-rel-btn--next"
+                            aria-label="Następny slajd">&gt;</button>
+                        <button class="aboutus__details-rel-btn aboutus__details-rel-btn--prev"
+                            aria-label="Poprzedni slajd">&lt;</button>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="aboutus__team section-padding">
+            <div class="wrapper">
+                <div class="aboutus__team-box">
+                    <div class="aboutus__team-content">
+                        <h2 class="section-title">Zespół</h2>
+                        <div class="underline"></div>
+                        <div class="aboutus__team-people">
+                            <div class="aboutus__team-person">
+                                <div class="aboutus__team-person--data">
+                                    <div class="aboutus__team-person--text">
+                                        <h3 class="name">mgr inż. Tomasz Żuber
+                                        </h3>
+                                        <span class="position">Właściciel firmy / Geodeta uprawiony</span>
+                                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Perspiciatis dolor fugiat modi iusto mollitia accusamus consequuntur,
+                                            expedita
+                                            cumque aliquid quibusdam, nemo hic necessitatibus quidem exercitationem
+                                            assumenda blanditiis impedit. Voluptatum, magni. Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit. Unde pariatur praesentium dolorum, beatae
+                                            earum
+                                            alias aliquam tempora veritatis accusantium vero.</p>
+                                    </div>
+                                    <div class="aboutus__team-person--contact">
+                                        <p class="phone"><i class="fa-solid fa-phone"></i> 123 456 789</p>
+                                        <p class="email"><i class="fa-solid fa-envelope"></i> <a
+                                                href="mailto:asgeodezjapinczow@onet.eu">asgeodezjapinczow@onet.eu</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <img src=''>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="aboutus__openh">
+                        <h2 class="section-title">Godziny otwarcia</h2>
+                        <div class="underline"></div>
+                        <div class="aboutus__openh-box">
+                            <ul class="aboutus__openh-list">
+                                <li>Poniedziałek: 7:00 - 15:00</li>
+                                <li>Wtorek: 7:00 - 15:00</li>
+                                <li>Środa: 7:00 - 16:00</li>
+                                <li>Czwartek: 7:00 - 15:00</li>
+                                <li>Piątek: 7:00 - 14:00</li>
+                                <li>Niezależnie od dnia prosimy najpierw o
+                                    kontakt
+                                    telefoniczny! (możemy być poza biurem / w terenie)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </main>
+
+    <footer class="footer">
+    <div class="wrapper">
+        <div class="footer__boxes">
+            <div class="footer__box">
+                <p>ASGeodezja Spółka z Ograniczoną Odpowiedzialnością</p>
+                <p>Właściciel: Tomasz Żuber</p>
+                <p>NIP: 123456789981</p>
+                <p>REGON: 12345663</p>
+            </div>
+            <div class="footer__box">
+                <p>ul. Spokojna 23</p>
+                <p>28-400 Pińczów</p>
+                <p>123 456 789</p>
+                <p>asgeodezja@gmail.com</p>
+            </div>
+        </div>
+        <p class="footer__text">&copy; <span class="footer__year"></span> ASGeodezja - wszelkie prawa zastrzeżone</p>
+    </div>
+</footer>
+    <script src='./dist/js/main.min.js'></script>
+</body>
+
+</html>

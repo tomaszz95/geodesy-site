@@ -148,4 +148,17 @@
 			}
 		}
 	}
+
+	.aboutus__header {
+		height: 60vh;
+		&-img {
+			background-image: url('/dist/assets/img/aboutus_hero_big.jpg');
+			background-position: top;
+		}
+
+		&-text {
+			top: 42%;
+			font-size: $font-size-xl;
+		}
+	}
 }
