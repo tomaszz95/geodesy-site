@@ -7,9 +7,12 @@ const popupClose = document.querySelector('.aboutus__details-popup--close')
 const popupImg = document.querySelector('.aboutus__details-popup--img')
 const arrowLeft = document.querySelector('.aboutus__details-popup--arrow-prev')
 const arrowRight = document.querySelector('.aboutus__details-popup--arrow-next')
+const slides = document.querySelectorAll('.aboutus__carousel--slide')
+const nextSlideBtn = document.querySelector('.aboutus__carousel-button--next')
+const prevSlideBtn = document.querySelector('.aboutus__carousel-button--prev')
 let footerYear = document.querySelector('.footer__year')
 let boxesNumber = 0
-let currentImgIndex
+let curSlide = 0
 
 // NAVIGATION
 const navigationHandler = e => {
@@ -59,59 +62,47 @@ const newsBoxesAnimation = () => {
 
 // POPUP MANAGING
 const showNextImg = () => {
-	if (currentImgIndex === thumbnails.length - 1) {
-		currentImgIndex = 0
+	let photoIndex
+
+	if (popupImg.src.includes('ref1')) {
+		photoIndex = 1
+	} else if (popupImg.src.includes('ref2')) {
+		photoIndex = 2
 	} else {
-		currentImgIndex++
+		photoIndex = 0
 	}
-	popupImg.src = thumbnails[currentImgIndex].src
+
+	popupImg.src = thumbnails[photoIndex].src
 }
 
 const showPrevImg = () => {
-	if (currentImgIndex === 0) {
-		currentImgIndex = thumbnails.length - 1
+	let photoIndex
+
+	if (popupImg.src.includes('ref1')) {
+		photoIndex = 2
+	} else if (popupImg.src.includes('ref2')) {
+		photoIndex = 0
 	} else {
-		currentImgIndex--
+		photoIndex = 1
 	}
-	popupImg.src = thumbnails[currentImgIndex].src
+
+	popupImg.src = thumbnails[photoIndex].src
+}
+
+const showPopup = e => {
+	popup.classList.remove('hidden')
+	popupImg.src = e.target.src
+	thumbnails.forEach(element => {
+		element.setAttribute('tabindex', -1)
+	})
 }
 
 const closePopup = () => {
 	popup.classList.add('hidden')
 }
 
-thumbnails.forEach((thumbnail, index) => {
-	const showPopup = e => {
-		popup.classList.remove('hidden')
-		popupImg.src = e.target.src
-		currentImgIndex = index
-		thumbnails.forEach(element => {
-			element.setAttribute('tabindex', -1)
-		})
-	}
-	thumbnail.addEventListener('click', showPopup)
-
-	thumbnail.addEventListener('keydown', e => {
-		if (e.code === 'Enter' || e.key === 13) {
-			showPopup(e)
-		}
-	})
-})
-
-// FOOTER YEAR
-const handleCurrentYear = () => {
-	const year = new Date().getFullYear()
-	footerYear.innerText = year
-}
-
-handleCurrentYear()
-window.addEventListener('scroll', newsBoxesAnimation)
-burgerBtn.addEventListener('click', navigationHandler)
-navigation.addEventListener('click', closeNavigation)
-popupClose.addEventListener('click', closePopup)
-arrowRight.addEventListener('click', showNextImg)
-arrowLeft.addEventListener('click', showPrevImg)
-document.addEventListener('keydown', e => {
+// KEYS FUNCTIONALITY
+const popupKeys = e => {
 	if (!popup.classList.contains('hidden')) {
 		if (e.code === 'ArrowRight' || e.key === 39) {
 			showNextImg()
@@ -121,9 +112,67 @@ document.addEventListener('keydown', e => {
 			closePopup()
 		}
 	}
+}
+
+// SLIDER
+slides.forEach((slide, indx) => {
+	slide.style.transform = `translateX(${indx * 100}%)`
 })
-popup.addEventListener('click', e => {
-	if (e.target === popup) {
-		closePopup()
+
+const nextSlideFunction = () => {
+	let maxSlide = slides.length - 1
+
+	if (curSlide === maxSlide) {
+		curSlide = 0
+	} else {
+		curSlide++
 	}
-})
+	
+	slides.forEach((slide, indx) => {
+		slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`
+	})
+}
+
+const prevSlideFunction = () => {
+	let maxSlide = slides.length - 1
+
+	if (curSlide === 0) {
+		curSlide = maxSlide
+	} else {
+		curSlide--
+	}
+
+	slides.forEach((slide, indx) => {
+		slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`
+	})
+}
+
+// FOOTER YEAR
+const handleCurrentYear = () => {
+	const year = new Date().getFullYear()
+	footerYear.innerText = year
+}
+
+if (location.href.includes('aboutus')) {
+	popup.addEventListener('click', e => {
+		if (e.target === popup) {
+			closePopup()
+		} else {
+			return
+		}
+	})
+
+	arrowRight.addEventListener('click', showNextImg)
+	arrowLeft.addEventListener('click', showPrevImg)
+	popupClose.addEventListener('click', closePopup)
+	thumbnails.forEach(thumbnail => thumbnail.addEventListener('click', showPopup))
+	document.addEventListener('keydown', popupKeys)
+
+	nextSlideBtn.addEventListener('click', nextSlideFunction)
+	prevSlideBtn.addEventListener('click', prevSlideFunction)
+}
+
+handleCurrentYear()
+window.addEventListener('scroll', newsBoxesAnimation)
+burgerBtn.addEventListener('click', navigationHandler)
+navigation.addEventListener('click', closeNavigation)
