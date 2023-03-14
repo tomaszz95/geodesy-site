@@ -59,116 +59,114 @@
 	}
 }
 
-// .aboutus__team {
-// 	h2 {
-// 		margin-top: 1.3rem;
-// 	}
+.aboutus__team {
+	background-image: $light-blue-gradient;
 
-// 	&.section-padding {
-// 		padding: 1.9rem 0.9rem;
-// 	}
+	h2 {
+		color: $pure-white;
+	}
 
-// 	&-box {
-// 		display: flex;
-// 		align-items: center;
-// 		justify-content: space-between;
-// 		flex-direction: column;
-// 	}
+	.underline {
+		background-color: $complementary-color;
+	}
+	.wrapper {
+		max-width: 1300px;
+	}
 
-// 	&-content {
-// 		width: 100%;
-// 	}
+	&-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding: 1em 1em 0 1em;
+	}
 
-// 	&-allpeople {
-// 		margin-top: 2.5rem;
-// 		display: flex;
-// 		justify-content: center;
-// 		align-items: center;
-// 		flex-direction: column;
-// 		color: $pure-white;
-// 	}
+	&-box {
+		position: relative;
+		margin: 2.5em 0 0;
+		padding: 2em;
+		max-width: 500px;
+		display: flex;
+		flex-direction: column;
+		border-radius: 8px;
+		background-color: $pure-white;
+		box-shadow: 0 0 2px 2px $primary-color;
+		transition: opacity 1s, transform 1s;
+		h3 {
+			font-size: $font-size-l;
+			font-weight: bold;
+			text-align: left;
+			margin: 0.5em 0 0.2em;
+			color: $complementary-color;
+		}
 
-// 	&-person {
-// 		width: 100%;
-// 		margin: 0.6rem;
-// 	}
+		small {
+			font-size: 1.4rem;
+			text-align: left;
+			color: #292727;
+			font-style: italic;
+		}
 
-// 	&-button {
-// 		display: flex;
-// 		align-items: center;
-// 		justify-content: space-between;
-// 		flex-direction: column;
-// 		width: 100%;
-// 		padding: 1.3rem 0.6rem;
-// 		border-top-left-radius: 8px;
-// 		border-top-right-radius: 8px;
-// 		cursor: pointer;
-// 		border: none;
-// 		color: $pure-white;
-// 		font-size: 1.6rem;
-// 		font-weight: bold;
-// 		transition: background-color 0.5s;
-// 		&.one {
-// 			background-image: $light-blue-gradient;
-// 		}
-// 		&.two {
-// 			background-image: $purple-gradient;
-// 		}
-// 		&.three {
-// 			background-image: $blue-gradient;
-// 		}
-// 		&:hover,
-// 		&:active {
-// 			background-color: #8b4a78;
-// 		}
+		p {
+			margin-top: 2em;
+		}
 
-// 		.name {
-// 			margin-bottom: 0.6rem;
-// 			i {
-// 				margin-right: 0.2rem;
-// 			}
-// 		}
-// 	}
+		&--info-mail {
+			margin-top: 2em;
+			font-size: $font-size-s;
 
-// 	&-text {
-// 		display: flex;
-// 		align-items: center;
-// 		justify-content: space-between;
-// 		flex-direction: column;
-// 		color: $pure-white;
-// 		margin-bottom: 1.9rem;
-// 		font-size: 1.6rem;
-// 		background-color: rgb(79, 109, 241);
-// 		border-bottom-left-radius: 8px;
-// 		border-bottom-right-radius: 8px;
-// 		overflow: hidden;
-// 		max-height: 0;
-// 		transition: max-height 0.5s, padding 0.5s;
-// 		text-align: center;
-// 		.fa-phone,
-// 		.fa-house,
-// 		.fa-envelope {
-// 			margin: 0.6rem;
-// 		}
-// 		a {
-// 			text-decoration: none;
-// 			color: $pure-white;
-// 			transition: color 0.3s;
-// 			&:hover {
-// 				color: #ddd;
-// 			}
-// 		}
-// 	}
+			i {
+				margin-right: 0.5em;
+			}
 
-// 	&-openh {
-// 		margin: 1.3rem 0;
-// 		&-list {
-// 			list-style: none;
-// 			&-item {
-// 				font-size: 1.6rem;
-// 				margin-top: 0.2rem;
-// 				text-align: center;
-// 			}
-// 		}
-// 	}
-// }
+			a {
+				color: $secondary-color;
+			}
+		}
+
+		&--info-phone {
+			margin-top: 1em;
+			font-size: $font-size-s;
+
+			i {
+				margin-right: 0.7em;
+			}
+
+			a {
+				color: $secondary-color;
+			}
+		}
+
+		img {
+			margin-top: 2em;
+			width: 100%;
+		}
+	}
+}
+
+.aboutus__openh {
+	&-box {
+		padding: 1em 1em 0 1em;
+	}
+	&-list {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		margin-top: 1em;
+		list-style-type: none;
+		li {
+			font-size: $font-size-s;
+			margin: 0.3em;
+			span {
+				font-weight: bold;
+			}
+		}
+		li:last-child {
+			border-top: 1px solid rgb(56, 53, 53);
+			padding-top: 0.5em;
+			margin-top: 1em;
+			text-align: center;
+		}
+	}
+}

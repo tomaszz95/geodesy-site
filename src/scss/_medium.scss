@@ -75,4 +75,70 @@
 			font-size: 4.2rem;
 		}
 	}
+
+	.aboutus__team {
+		&-box {
+			margin: 2em;
+			h3 {
+				font-size: $font-size-xl;
+				margin: 0.7em 0 0.2em;
+			}
+
+			small {
+				font-size: 1.5rem;
+			}
+
+			p {
+				margin-top: 2em;
+				font-size: $font-size-s;
+			}
+
+			&--info-mail {
+				margin-top: 1em;
+				font-size: $font-size-l;
+
+				i {
+					margin-right: 0.6em;
+				}
+			}
+
+			&--info-phone {
+				margin-top: 0.7em;
+				font-size: $font-size-l;
+
+				i {
+					margin-right: 0.7em;
+				}
+			}
+
+			img {
+				margin-top: 2em;
+				width: 100%;
+			}
+		}
+
+		&-box:nth-child(even) {
+			margin-right: 200px;
+		}
+
+		&-box:nth-child(odd) {
+			margin-left: 200px;
+		}
+	}
+
+	.aboutus__openh {
+		&-list {
+			margin-top: 1.4em;
+			li {
+				font-size: 1.7rem;
+				margin: 0.4em;
+				span {
+					margin-left: 0.4em;
+				}
+			}
+			li:last-child {
+				padding-top: 0.6em;
+			}
+		}
+	}
 }

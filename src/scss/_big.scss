@@ -192,4 +192,31 @@
 			font-size: 4.4rem;
 		}
 	}
+
+	.aboutus__team {
+		&-container {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+
+		&-box {
+			margin: 2em 3em;
+			max-width: 35%;
+			small {
+				font-size: $font-size-s;
+			}
+
+			p {
+				font-size: 1.7rem;
+			}
+		}
+
+		&-box:nth-child(even) {
+			margin-right: 0;
+		}
+
+		&-box:nth-child(odd) {
+			margin-left: 0;
+		}
+	}
 }
