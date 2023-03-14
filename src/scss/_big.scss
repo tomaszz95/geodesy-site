@@ -162,7 +162,25 @@
 		}
 	}
 
-	.aboutus__carousel {
+	.aboutus__firm {
+		&-box {
+			&--text {
+				h3 {
+					font-size: $font-size-xl;
+					margin-bottom: 1.4em;
+				}
+				p {
+					font-size: 1.7rem;
+					margin-right: 2.5em;
+				}
+			}
+			&--img {
+				width: 45%;
+			}
+		}
+	}
+
+	.services__carousel {
 		&--text {
 			bottom: calc(15% - 2.2rem);
 			font-size: 2.2rem;

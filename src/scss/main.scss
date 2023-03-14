@@ -420,6 +420,7 @@ body {
 		}
 
 		&-img {
+			position: relative;
 			padding: 1.3rem;
 			height: 100%;
 			border-radius: 8px;
@@ -448,8 +449,8 @@ body {
 			&-info {
 				font-size: $font-size-s;
 				position: absolute;
-				bottom: 2.5rem;
-				right: 2.5rem;
+				bottom: 3rem;
+				right: 3rem;
 				i {
 					margin-right: 0.6rem;
 				}

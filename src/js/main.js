@@ -1,15 +1,15 @@
 const burgerBtn = document.querySelector('.nav-mobile__burger')
 const navigation = document.querySelector('.nav-mobile__links')
 const newsBoxes = document.querySelectorAll('.news__box')
-const thumbnails = document.querySelectorAll('.aboutus__details-gallery-img')
-const popup = document.querySelector('.aboutus__details-popup')
-const popupClose = document.querySelector('.aboutus__details-popup--close')
-const popupImg = document.querySelector('.aboutus__details-popup--img')
-const arrowLeft = document.querySelector('.aboutus__details-popup--arrow-prev')
-const arrowRight = document.querySelector('.aboutus__details-popup--arrow-next')
-const slides = document.querySelectorAll('.aboutus__carousel--slide')
-const nextSlideBtn = document.querySelector('.aboutus__carousel-button--next')
-const prevSlideBtn = document.querySelector('.aboutus__carousel-button--prev')
+const thumbnails = document.querySelectorAll('.services__details-gallery-img')
+const popup = document.querySelector('.services__details-popup')
+const popupClose = document.querySelector('.services__details-popup--close')
+const popupImg = document.querySelector('.services__details-popup--img')
+const arrowLeft = document.querySelector('.services__details-popup--arrow-prev')
+const arrowRight = document.querySelector('.services__details-popup--arrow-next')
+const slides = document.querySelectorAll('.services__carousel--slide')
+const nextSlideBtn = document.querySelector('.services__carousel-button--next')
+const prevSlideBtn = document.querySelector('.services__carousel-button--prev')
 let footerYear = document.querySelector('.footer__year')
 let boxesNumber = 0
 let curSlide = 0
@@ -127,7 +127,7 @@ const nextSlideFunction = () => {
 	} else {
 		curSlide++
 	}
-	
+
 	slides.forEach((slide, indx) => {
 		slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`
 	})
@@ -153,7 +153,7 @@ const handleCurrentYear = () => {
 	footerYear.innerText = year
 }
 
-if (location.href.includes('aboutus')) {
+if (location.href.includes('services')) {
 	popup.addEventListener('click', e => {
 		if (e.target === popup) {
 			closePopup()

@@ -21,7 +21,26 @@
 		}
 	}
 
-	.aboutus__details {
+	.aboutus__firm {
+		&-box {
+			&--text {
+				h3 {
+					font-size: $font-size-l;
+					margin-bottom: 1.2em;
+				}
+				p {
+					font-size: $font-size-s;
+					margin-right: 2em;
+				}
+			}
+			&--img {
+				display: block;
+				width: 50%;
+			}
+		}
+	}
+
+	.services__details {
 		&-boxes {
 			margin-top: 2em;
 		}
@@ -44,7 +63,7 @@
 		}
 	}
 
-	.aboutus__carousel {
+	.services__carousel {
 		&--text {
 			bottom: calc(15% - 2rem);
 			font-size: 2rem;
