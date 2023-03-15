@@ -20,4 +20,4 @@ The page is created in **Polish language**.
 - GULP (code minification, compressing images, support for older browsers),
 - git / github.
 
-#### I encourage you to check the website - uploaded to netlifly [ASGeodesy](https://geodezjapl.netlify.app/).
+#### I encourage you to check the website - uploaded to netlifly [ASGeodesy](https://asgeodesy.netlify.app/).
