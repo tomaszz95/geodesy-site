@@ -219,4 +219,19 @@
 			margin-left: 0;
 		}
 	}
+
+	.contact__box {
+		&--text {
+			margin-left: 2em;
+		}
+		&--data {
+			h3 {
+				margin-bottom: 0.4em;
+			}
+
+			small {
+				margin-bottom: 0.3em;
+			}
+		}
+	}
 }

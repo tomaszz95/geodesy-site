@@ -126,19 +126,20 @@
 		}
 	}
 
-	.aboutus__openh {
-		&-list {
-			margin-top: 1.4em;
-			li {
-				font-size: 1.7rem;
-				margin: 0.4em;
-				span {
-					margin-left: 0.4em;
+	.contact__box {
+		text-align: left;
+		margin-top: 2em;
+
+		&--openh {
+			ul {
+				li:last-child {
+					margin-top: 2.5em;
 				}
 			}
-			li:last-child {
-				padding-top: 0.6em;
-			}
+		}
+
+		img {
+			display: block;
 		}
 	}
 }
