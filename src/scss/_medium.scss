@@ -142,4 +142,24 @@
 			display: block;
 		}
 	}
+
+	.error-img {
+		max-width: 600px;
+	}
+
+	.error-content {
+		h3 {
+			font-size: $font-size-xl;
+		}
+
+		p {
+			margin-top: 1em;
+			font-size: 1.8rem;
+		}
+
+		a {
+			padding: 1em 3em;
+			font-size: 1.8rem;
+		}
+	}
 }
