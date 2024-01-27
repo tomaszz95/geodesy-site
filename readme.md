@@ -2,7 +2,7 @@
 
 <p>Hello, I present to you my website project - completely finished and functional website for geodesy firm.
 I work as a land surveyor in a moment of creating the page, so I decided to develop a website for a made-up geodesic company.
-The page is created in Polish.</p>
+The page is created in Polish language.</p>
 
 <p>I encourage you to check the website - uploaded to netlifly <a href='https://asgeodesy.netlify.app/'>ASGeodesy</a>.</p>
 
