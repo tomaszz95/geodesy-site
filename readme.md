@@ -10,12 +10,12 @@ The page is created in Polish.</p>
 <h2>📫 Page contains</h2>
 
 <ul>
-- main site and three site pages (services, about us and contact),
-- custom page 404 and redirects,
-- responsive design,
-- accessibility practices,
-- SEO practices,
-- basic design requirements preserved.
+-   main site and three site pages (services, about us and contact),
+-   custom page 404 and redirects,
+-   responsive design,
+-   accessibility practices,
+-   SEO practices,
+-   basic design requirements preserved.
 </ul>
 
 <img src='./src/assets/readme/mainSite1.jpg'>
@@ -24,9 +24,9 @@ The page is created in Polish.</p>
 
 <h2>🛠 Used tools / programming languages / technologies</h2>
 <ul>
-- HTML / CSS (SCSS),
-- JavaScript,
-- GULP,
-- git / github.
+-   HTML / CSS (SCSS),
+-   JavaScript,
+-   GULP,
+-   git / github.
 </ul>
 </div>
