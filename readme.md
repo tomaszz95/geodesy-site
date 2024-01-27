@@ -1,4 +1,3 @@
-<div align='center'>
 <h1>Geodesy site</h1>
 
 <p>Hello, I present to you my website project - completely finished and functional website for geodesy firm.
@@ -16,9 +15,11 @@ The page is created in Polish.</p>
  - SEO practices,
  - basic design requirements preserved.
 
+<div align='center'>
 <img src='./src/assets/readme/mainSite1.jpg'>
 <img src='./src/assets/readme/mainSite2.jpg'>
 <img src='./src/assets/readme/usage.jpg'>
+</div>
 
 <h2>🛠 Used tools / programming languages / technologies</h2>
 
@@ -27,4 +28,3 @@ The page is created in Polish.</p>
  - GULP,
  - git / github.
 
-</div>
