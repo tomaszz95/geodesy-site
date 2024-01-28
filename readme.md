@@ -15,16 +15,16 @@ The page is created in Polish language.</p>
  - SEO practices,
  - basic design requirements preserved.
 
-<div align='center'>
-<img src='./src/assets/readme/mainSite1.jpg'>
-<img src='./src/assets/readme/mainSite2.jpg'>
-<img src='./src/assets/readme/usage.jpg'>
-</div>
-
 <h2>🛠 Used tools / programming languages / technologies</h2>
 
  - HTML / CSS (SCSS),
  - JavaScript,
  - GULP,
  - git / github.
+
+<div align='center'>
+<img src='./src/assets/readme/mainSite1.jpg'>
+<img src='./src/assets/readme/mainSite2.jpg'>
+<img src='./src/assets/readme/usage.jpg'>
+</div>
 
